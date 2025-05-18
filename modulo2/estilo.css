@@ -1,0 +1,126 @@
+html{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 4rem;
+
+}
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+#topo{
+    height: 115vh;
+    background-image: url(fundo.svg);
+    background-size: cover;
+    border: 1px solid red;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+#topo-conteudo{
+    border: 1px solid red;
+    width: 47vw;
+   
+}
+
+.container{
+    padding: 6rem 6.9rem;
+    text-align: center;
+}
+
+
+#footer{
+    background: linear-gradient(190deg,#fff,#d9d9d9);
+    border: 1px solid red;
+}
+
+button{
+    padding: 1.25rem 1.57rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #F84646;
+    border: none;
+    border-radius: 0.7rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+  
+}
+button:hover{
+    transform: scale(1.1);
+   
+    opacity: 0.8;
+   
+}
+
+.background-red{
+    background-color: #F84646;
+}
+
+
+#objetivo{
+    color: #fff;
+}
+
+.conteudo{
+    width: 10rem;
+    border: 1px solid red;
+}
+
+#objetivo-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#objetivo-conteudo img{
+    margin: 0 2.5rem;
+}
+
+
+.article-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-container{
+   display: flex;
+  text-align: left;
+   flex-direction: column;
+   align-items: flex-start;
+   margin:0 2.5rem 0 0;
+}
+
+
+
+.article-container:nth-child(even){
+    flex-direction: row-reverse;
+    margin-top: 7rem;
+    
+}
+
+.div-container p{
+    font-size: 1rem;
+}
+
+.article-container:nth-child(even) > .div-container{
+    margin: 0 0 0 2.5rem;
+}
+
+.div-container button{
+    margin-top: 3rem;
+    font-size: .8rem;
+}
