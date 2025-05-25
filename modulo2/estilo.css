@@ -24,7 +24,7 @@ p{
     height: 115vh;
     background-image: url(fundo.svg);
     background-size: cover;
-    border: 1px solid red;
+   
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -32,7 +32,7 @@ p{
 }
 
 #topo-conteudo{
-    border: 1px solid red;
+   
     width: 47vw;
    
 }
@@ -75,7 +75,7 @@ button:hover{
 
 .conteudo{
     width: 10rem;
-    border: 1px solid red;
+  
 }
 
 #objetivo-conteudo{
@@ -238,3 +238,220 @@ li{
     padding: 10px 0px;
    
 }
+
+
+@media only screen and(min-width:768px){
+
+}
+
+@media only screen and (max-width:767px){
+
+
+
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+    font-size: 0.75rem;
+}
+
+h2{
+    font-size: 1.3rem;
+}
+
+/* section das qualidades*/
+
+
+#grid-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
+}
+
+.grid-item p {
+    font-size: 0.8rem;
+}
+
+
+/* Section do objetivo*/
+
+
+#objetivo-conteudo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#objetivo-conteudo img{
+    margin: 2.5rem 0;
+    transform: rotate(90deg);
+}
+
+
+
+
+/*Section da Gestão com fotos*/
+
+
+.article-container{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: normal;
+}
+
+.div-container{
+   display: flex;
+  text-align: center;
+   flex-direction: column;
+   align-items: normal;
+   margin:1rem 0 0 0;
+   justify-content: space-between;
+}
+
+
+
+.article-container:nth-child(even){
+    flex-direction: column-reverse;
+    margin-top: 7rem;
+    
+}
+
+.div-container p{
+    font-size: 0.8rem;
+}
+
+.article-container:nth-child(even) > .div-container{
+    margin: 1rem 0 0 0;
+}
+
+.div-container button{
+    margin-top: 3rem;
+    font-size: .8rem;
+}
+.div-container p{
+    color: #808080;
+}
+
+.article-container > img{
+    width: 100%;
+    object-fit:contain;
+    text-align: center;
+    
+}
+
+/*Referencias de empresas parceiras*/
+
+#grid-container-empresas{
+    display: grid;
+    grid-template-columns: repeat(1,0fr);
+    grid-template-rows: repeat(9,0fr);
+    align-items: center;
+    
+    justify-content: center;
+    
+    
+}
+
+.grid-item-empresas{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+   
+    border-radius: 1rem;
+    background-color: #fff;
+
+}
+#comtainer-empresas1{
+    grid-area: 1 /1 ;
+}
+
+#comtainer-empresas2{
+    grid-area: 2/1;
+}
+
+#comtainer-empresas3{
+    grid-area: 3/1;
+}
+
+#comtainer-empresas4{
+    grid-area: 4/1;
+   
+
+}
+#comtainer-empresas5{
+    grid-area:5 /1 ;
+}
+#comtainer-empresas6{
+    grid-area: 6/1;
+    padding: 5px 0px;
+    
+}
+#comtainer-empresas7{
+    grid-area: 7/1;
+    
+}
+#comtainer-empresas8{
+    grid-area: 8/1;
+   padding: 5px 0px;
+}
+
+#comtainer-empresas9{
+    grid-area: 9/1;
+    padding: 5px 0px;
+   
+}
+
+/*Footer do enviar mensagem*/
+#footer-conteudo{
+    align-items: center;
+    text-align: center;
+}
+button{
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F84646;
+    border: none;
+    border-radius: 0.7rem;
+    transition: opacity 0.5s ease-in-out, transform 0.5s .2s;;
+  
+}
+
+/*Rodapé conteudo<><><<<<<><><><><><*/
+
+
+#rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.container3 img{
+    margin-bottom: 5rem;
+}
+
+}
+
+
+
